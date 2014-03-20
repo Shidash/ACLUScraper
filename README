@@ -1,0 +1,5 @@
+This gem scrapes all the documents for any ACLU case you put in a URL to the documents for and then extracts the plain text and metadata.
+
+To use-
+e = ACLUScraper.new("caseurl")
+e.scrapeCase
