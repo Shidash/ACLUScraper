@@ -38,9 +38,9 @@ class ACLUScraper
           end
           
           # Download documents
-          `wget #{dochash[:url]}`
+          `wget -P public/uploads #{dochash[:url]}`
           path = dochash[:url].split("/")
-          dochash[:path] = path[path.length-1].chomp.strip
+          dochash[:path] = "public/uploads/" + path[path.length-1].chomp.strip
 
           # Extract metadata and text
           begin
